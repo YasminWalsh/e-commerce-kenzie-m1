@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    
+   
+</head>
+<body>
+    <!-- <div class="container"> -->
+        <!------ Cabeçalho ------>
+        <header class="header">
+            <h1 class="titulo">Weartake</h1>
+            <section id="categoria">
+                <p data-tag="Todos" class="item select">Todos</p>
+                <p data-tag="Acessórios" class="item">Acessórios</p>
+                <p data-tag="Calçados" class="item">Calçados</p>
+                <p data-tag="Camisetas" class="item">Camisetas</p>
+            </section>
+        </header>
+
+        <main>
+            <!------Produtos-------->
+            <section class="container-produtos">
+                <ul id="produtos" class="produtos">
+                    <li class="produtos-box">
+                        <figure class="header-produto">
+                            <img src="./img/lightweight jacket.svg" alt="">
+                        </figure>
+                        <div class="body-produto">
+                            <span id="tag-categoria">Camisetas</span>
+                            <span class="nome-produto">Lightweigth Jacket</span>
+                            <p>Jaqueta preta reforçada para frios rigorosos.</p>
+                            <span class="valor-produto">R$100,00</span>
+                            <span class="remove-botao">Adicionar ao Carrinho</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="container-carrinho">
+                <div class="aside-box">
+                    <!-------Navegação-------->
+                    <nav id="nav-pesquisa">
+                        <input id="pesquisa" type="text" name= "" placeholder="Digite aqui sua pesquisa">
+                        <button id="botaoPesquisa">Pesquisar</button>
+                    </nav>
+
+                    <!------Carrinho-------->
+                    <aside id="carrinho-box">
+                        <section class="header-carrinho">
+                            <p>Carrinho de compras</p>
+                        </section>
+                        <section id="itens-box">
+                            <ul class="produto-carrinho">
+                                <!-- <span class="carrinhoVazio">Carrinho Vazio</span> --> 
+                                <!-- <li data-index="0" class="produto-adicionado">
+                                    <figure class="img-carrinho">
+                                        <img src="./img/lightweight jacket.svg" alt="">
+                                    </figure>
+                                    <div class="descricao-carrinho">
+                                        <span class="nome-produto">Lightweigth Jacket</span>
+                                        <span class="valor-produto">R$100,00</span>
+                                        <span class="remove-botao">Remover Produto</span>
+                                    </div>
+                                </li>  -->                          
+                            </ul>
+                        </section>
+                        <section id="resumo-carrinho">
+                            <div class="quantidade">
+                                <p>Quantidade:</p>
+                                <span>3</span>
+                            </div>
+                            <div class="total-valor">
+                                <p>Total:</p>
+                                <span>R$200,00</span>
+                            </div>
+                        </section>
+                    </aside>
+                </div>
+            </section>
+        </main>
+        
+
+    <!-- </div> -->
+
+
+<script src="produtos.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

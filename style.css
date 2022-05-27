@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+/* .container{
+    position: relative;
+    width: 1600px;
+    height: 919px;
+    
+    background: #FFFFFF;
+    border-radius: 4px;
+} */
+/*---------Header--------*/
+
+.header{
+    width: 1600px;
+    height: 70px;
+    margin-left: -3px;
+    margin-top: 0px;
+    background: #F5F5F5;
+}
+
+.header h1{
+    height: 24px;
+    width: 212px;
+    margin-left: 115px;
+    margin-top: 23px;
+    border-radius: 0px;
+    /*o header h1 não quer abaixar acompanhando o titulo, mudei no line height abaixo pro titulo descer*/
+}
+
+.titulo{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 63px;   
+    color: #000000;
+}
+
+#categoria{
+    width: 346px;
+    height: 16px;
+    margin-left: 1137px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    color: #828282;
+}
+
+.item:hover{
+    text-decoration: underline black;
+    text-decoration-color: black;
+}
+
+.select{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+/*-------------------------Main conteudo--------------------*/
+.container-produtos{
+    position: absolute;
+    width: 1138px;
+    height: 849px;
+    
+}
+.produtos{
+    /*margin: 89px 483px 26px 115px;*/
+    width: 1021px;
+    height: 804px;
+    /* background-color: red; */
+    padding-top:10px; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    /* arrumar para ficarem certos quando muda de categoria no filtro */
+}
+
+.produtos-box{
+    width: 300px;
+    height: 376px;
+    /* background-color: purple; */
+    margin-left: 70px;
+    margin-top: 15px; 
+    /* margin-left: 117px;
+    margin-top: 92px; */
+   
+    /*entre cada box tem que ter 50px de espaço e 21px pro de cima no ultimo*/
+}
+
+/* .produtos-box:hover{
+
+} */
+
+.header-produto{
+    height: 154px;
+    width: 296px;
+    border-radius: 0px;
+    position: absolute;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #F5F5F5;
+}
+
+.header-produto img{
+    height: 140px;
+    width: 191px;
+    margin-left: 54px;
+    margin-top: 5px;
+    border-radius: 0px;
+}
+
+.body-produto{
+    position: absolute;
+    height: 220px;
+    width: 296px;
+   
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+/*  padding: 20px 15px; */   
+     margin-top: 154px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 1px solid #F5F5F5;
+}
+
+#tag-categoria{
+    width: 63px;
+    height: 16px;
+    background-color: #2E245E;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.body-produto p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+/*--------*/
+
+.container-carrinho{
+    float: right;
+    width: 459px;
+    height: 849px;
+}
+.aside-box{
+    height: 565px;
+    width: 347px;
+   /*  background-color: red; */
+    margin-top:27px;
+    margin-left:21px;
+}
+
+#nav-pesquisa{
+    margin-bottom: 10px;
+}
+#pesquisa{
+    width: 232px;
+    height: 50px;
+   /*  margin-left: 0px;
+    margin-top: 97px; */
+    background-color: #F5F5F5;
+    padding-left: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid #F5F5F5;
+    box-sizing: border-box;
+}
+
+#botaoPesquisa{
+    width: 100px;
+    height: 51px;
+   /*  margin-left: 8px;
+    margin-top: 97px; */
+    background-color: #6B54DE;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#carrinho-box{
+    width: 347px;
+    height: 505px;
+   /*  margin-left: 1138px;
+    margin-top: 10px; */
+    display:grid;   
+}
+
+.header-carrinho{
+    background-color: #6B54DE;
+    width: 347px;
+    height: 50px;
+    text-align:center;
+}
+
+.header-carrinho p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+#itens-box{
+    width: 347px;
+    height: 336px;
+    background: #F5F5F5;
+}
+.produto-carrinho{
+    height: 279px;
+    width: 320px;
+    margin-left: 19px;
+    margin-top:26px;
+    margin-right: 45px;
+    margin-bottom: 29px;
+    border-radius: 0px;
+    overflow: auto;
+    /* background-color: aqua; */
+}
+.carrinhoVazio{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;    
+    color: #333333;
+}
+
+.produto-adicionado{
+    width:275px ;
+    height: 80px;
+    display: flex;
+    justify-content: initial;      
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.img-carrinho{ 
+    height: 80px;
+    width: 80px;
+    border-radius: 0px;
+    background-color: #FFFFFF;
+    align-content: center;
+}
+
+.img-carrinho img{
+    margin-top: 10px;
+    height: 60px;
+    width: 79px;
+    border-radius: 0px;
+}
+
+.descricao-carrinho{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.nome-produto{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.valor-produto{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2E245E;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+.remove-botao{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+.remove-botao:hover{
+text-decoration: underline #26069b;
+}
+
+/*----------*/
+
+#resumo-carrinho{
+    width: 347px;
+    height: 119px;
+    background: #333333;
+}
+
+.quantidade{
+    display: inline-flex;
+}
+.quantidade p{
+    width: 118px;
+    height: 16px;
+    text-align: initial;
+    margin-top: 30px;
+    margin-left: 17px;
+}
+
+.quantidade span{
+    margin-top: 30px;
+    margin-left: 118px;
+    height: 16px;
+    width: 65px;
+    text-align: end;
+
+}
+
+.total-valor{
+    display: inline-flex;
+}
+
+.total-valor p{
+    width: 118px;
+    height: 16px;
+    text-align: initial;
+    margin-top: 16px;
+    margin-left: 17px;
+}
+
+.total-valor span{
+    height: 16px;
+    width: 65px;
+    margin-top: 16px;
+    margin-left: 118px;
+    text-align:end;
+}
+
+#resumo-carrinho p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+#resumo-carrinho span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #828282;
+}
+
